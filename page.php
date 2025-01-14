@@ -1,13 +1,16 @@
-<?php get_header() ?>
+
 <?php
+
+get_header()
   while(have_posts()){
       the_post();?>
-
-      <h2><a href="<?= the_permalink(); ?>"></a> <?= the_title(); ?></h2>
+        <h1>Page not post</h1>
+      <h2><?= the_title(); ?></h2>
       <?= the_content();?>
       <hr>
       <?php
-  }
 
+      
+  }
   get_footer()
 ?>
